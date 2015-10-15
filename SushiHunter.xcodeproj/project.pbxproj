@@ -16,6 +16,11 @@
 		04F237C41BCF040800FAD68C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F237C21BCF040800FAD68C /* LaunchScreen.storyboard */; };
 		04F237CF1BCF040800FAD68C /* SushiHunterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237CE1BCF040800FAD68C /* SushiHunterTests.m */; };
 		04F237DA1BCF040800FAD68C /* SushiHunterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237D91BCF040800FAD68C /* SushiHunterUITests.m */; };
+		04F237E91BCF085800FAD68C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237E81BCF085800FAD68C /* ThirdViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04F237EB1BCF091D00FAD68C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F237EA1BCF091D00FAD68C /* MapKit.framework */; };
+		04F237F11BCF113B00FAD68C /* SushiJoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237F01BCF113B00FAD68C /* SushiJoint.m */; settings = {ASSET_TAGS = (); }; };
+		04F237F41BCF24B500FAD68C /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237F31BCF24B500FAD68C /* LocationHandler.m */; settings = {ASSET_TAGS = (); }; };
+		04F237F71BCF377B00FAD68C /* ShopHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237F61BCF377B00FAD68C /* ShopHandler.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,15 @@
 		04F237D51BCF040800FAD68C /* SushiHunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushiHunterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F237D91BCF040800FAD68C /* SushiHunterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SushiHunterUITests.m; sourceTree = "<group>"; };
 		04F237DB1BCF040800FAD68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F237E71BCF085800FAD68C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		04F237E81BCF085800FAD68C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		04F237EA1BCF091D00FAD68C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		04F237EF1BCF113B00FAD68C /* SushiJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SushiJoint.h; sourceTree = "<group>"; };
+		04F237F01BCF113B00FAD68C /* SushiJoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SushiJoint.m; sourceTree = "<group>"; };
+		04F237F21BCF24B500FAD68C /* LocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHandler.h; sourceTree = "<group>"; };
+		04F237F31BCF24B500FAD68C /* LocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHandler.m; sourceTree = "<group>"; };
+		04F237F51BCF377B00FAD68C /* ShopHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopHandler.h; sourceTree = "<group>"; };
+		04F237F61BCF377B00FAD68C /* ShopHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F237EB1BCF091D00FAD68C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +99,7 @@
 		04F237A51BCF040700FAD68C = {
 			isa = PBXGroup;
 			children = (
+				04F237EA1BCF091D00FAD68C /* MapKit.framework */,
 				04F237B01BCF040800FAD68C /* SushiHunter */,
 				04F237CD1BCF040800FAD68C /* SushiHunterTests */,
 				04F237D81BCF040800FAD68C /* SushiHunterUITests */,
@@ -108,8 +124,16 @@
 				04F237B51BCF040800FAD68C /* AppDelegate.m */,
 				04F237B71BCF040800FAD68C /* FirstViewController.h */,
 				04F237B81BCF040800FAD68C /* FirstViewController.m */,
+				04F237F51BCF377B00FAD68C /* ShopHandler.h */,
+				04F237F61BCF377B00FAD68C /* ShopHandler.m */,
 				04F237BA1BCF040800FAD68C /* SecondViewController.h */,
 				04F237BB1BCF040800FAD68C /* SecondViewController.m */,
+				04F237E71BCF085800FAD68C /* ThirdViewController.h */,
+				04F237E81BCF085800FAD68C /* ThirdViewController.m */,
+				04F237F21BCF24B500FAD68C /* LocationHandler.h */,
+				04F237F31BCF24B500FAD68C /* LocationHandler.m */,
+				04F237EF1BCF113B00FAD68C /* SushiJoint.h */,
+				04F237F01BCF113B00FAD68C /* SushiJoint.m */,
 				04F237BD1BCF040800FAD68C /* Main.storyboard */,
 				04F237C01BCF040800FAD68C /* Assets.xcassets */,
 				04F237C21BCF040800FAD68C /* LaunchScreen.storyboard */,
@@ -212,6 +236,11 @@
 				TargetAttributes = {
 					04F237AD1BCF040800FAD68C = {
 						CreatedOnToolsVersion = 7.0.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					04F237C91BCF040800FAD68C = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -275,9 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F237F71BCF377B00FAD68C /* ShopHandler.m in Sources */,
 				04F237BC1BCF040800FAD68C /* SecondViewController.m in Sources */,
+				04F237E91BCF085800FAD68C /* ThirdViewController.m in Sources */,
 				04F237B61BCF040800FAD68C /* AppDelegate.m in Sources */,
+				04F237F41BCF24B500FAD68C /* LocationHandler.m in Sources */,
 				04F237B91BCF040800FAD68C /* FirstViewController.m in Sources */,
+				04F237F11BCF113B00FAD68C /* SushiJoint.m in Sources */,
 				04F237B31BCF040800FAD68C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
