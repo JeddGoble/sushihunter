@@ -20,7 +20,6 @@
 @property (strong, nonatomic) ShopHandler *shopHandler;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
-
 @end
 
 @implementation FirstViewController
@@ -36,10 +35,7 @@
     
     self.mapView.showsUserLocation = YES;
     
-
-    
 }
-
 
 
 - (void) didUpdateToLocation:(CLLocation *)newLocation fromOldLocation:(CLLocation *)oldLocation {
@@ -66,9 +62,20 @@
     
     self.sushiJoints = [[NSArray alloc] initWithArray:[self.shopHandler unPackMapItems:shopsArray]];
     
-    for (SushiJoint *shop in self.sushiJoints) {
-        [self addPinToMap:shop];
+    
+    if (self.sushiJoints.count >= 4) {
+        for (int i = 0; i < 4; i++) {
+            [self addPinToMap:[self.sushiJoints objectAtIndex:i]];
+        }
+    } else {
+        for (SushiJoint *shop in self.sushiJoints) {
+            [self addPinToMap:shop];
+        }
     }
+    
+    LocationHandler *handler = [LocationHandler new];
+    [handler stopUpdating];
+    
     
 }
 

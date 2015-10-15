@@ -21,6 +21,7 @@
 		04F237F11BCF113B00FAD68C /* SushiJoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237F01BCF113B00FAD68C /* SushiJoint.m */; settings = {ASSET_TAGS = (); }; };
 		04F237F41BCF24B500FAD68C /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237F31BCF24B500FAD68C /* LocationHandler.m */; settings = {ASSET_TAGS = (); }; };
 		04F237F71BCF377B00FAD68C /* ShopHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237F61BCF377B00FAD68C /* ShopHandler.m */; settings = {ASSET_TAGS = (); }; };
+		04F237FA1BCFFCD100FAD68C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F237F91BCFFCD100FAD68C /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		04F237F31BCF24B500FAD68C /* LocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHandler.m; sourceTree = "<group>"; };
 		04F237F51BCF377B00FAD68C /* ShopHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopHandler.h; sourceTree = "<group>"; };
 		04F237F61BCF377B00FAD68C /* ShopHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopHandler.m; sourceTree = "<group>"; };
+		04F237F81BCFFCD100FAD68C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		04F237F91BCFFCD100FAD68C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				04F237B51BCF040800FAD68C /* AppDelegate.m */,
 				04F237B71BCF040800FAD68C /* FirstViewController.h */,
 				04F237B81BCF040800FAD68C /* FirstViewController.m */,
+				04F237F81BCFFCD100FAD68C /* DetailViewController.h */,
+				04F237F91BCFFCD100FAD68C /* DetailViewController.m */,
 				04F237F51BCF377B00FAD68C /* ShopHandler.h */,
 				04F237F61BCF377B00FAD68C /* ShopHandler.m */,
 				04F237BA1BCF040800FAD68C /* SecondViewController.h */,
@@ -306,6 +311,7 @@
 			files = (
 				04F237F71BCF377B00FAD68C /* ShopHandler.m in Sources */,
 				04F237BC1BCF040800FAD68C /* SecondViewController.m in Sources */,
+				04F237FA1BCFFCD100FAD68C /* DetailViewController.m in Sources */,
 				04F237E91BCF085800FAD68C /* ThirdViewController.m in Sources */,
 				04F237B61BCF040800FAD68C /* AppDelegate.m in Sources */,
 				04F237F41BCF24B500FAD68C /* LocationHandler.m in Sources */,

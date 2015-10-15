@@ -12,6 +12,7 @@
 #import "SushiJoint.h"
 #import "LocationHandler.h"
 #import "ShopHandler.h"
+#import "DetailViewController.h"
 
 @interface ThirdViewController () <UITableViewDataSource, UITableViewDelegate, LocationHandlerDelegate>
 
@@ -69,6 +70,8 @@
         
         double miles = meters / 1609.344;
         
+        shop.distance = miles;
+        
         cell.detailTextLabel.text = [NSString stringWithFormat:@"%.02f miles", miles];
     }
 
@@ -83,6 +86,16 @@
     } else {
         return 0;
     }
+    
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DetailViewController *tempVC = segue.destinationViewController;
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    tempVC.sushiJoint = [self.sushiJoints objectAtIndex:indexPath.row];
     
     
 }

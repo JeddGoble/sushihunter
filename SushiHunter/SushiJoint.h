@@ -23,6 +23,7 @@
 @property (strong, nonatomic) NSString *phoneNumber;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
+@property (nonatomic) double distance;
 @property (strong, nonatomic) NSMutableArray *images;
 @property (strong, nonatomic) NSURL *url;
 
